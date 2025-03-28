@@ -4,7 +4,7 @@ import joblib
 app = Flask(__name__)
 
 # 🔹 Load Pre-trained Spam Detection Model
-loaded_model = joblib.load("/content/drive/MyDrive/spam_detector.pkl")
+loaded_model = joblib.load("enter path for pkl included")
 
 @app.route("/detect-spam", methods=["POST"])
 def detect_spam():
